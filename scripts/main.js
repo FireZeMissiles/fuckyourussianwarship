@@ -354,5 +354,7 @@ var targets = [
     'https://iz.ru/',
     'https://pravda.sk/',
     'https://vestiprim.com/',
-    'https://meduza.io/feature/2022/03/03/kogda-ty-vstupish-v-sovsem-uzh-vzrosluyu-zhizn-vse-uzhe-ulyazhetsya'
+    'https://meduza.io/feature/2022/03/03/kogda-ty-vstupish-v-sovsem-uzh-vzrosluyu-zhizn-vse-uzhe-ulyazhetsya',
+    'https://185.170.2.232/',
+    'https://185.170.2.231/'
 ]
