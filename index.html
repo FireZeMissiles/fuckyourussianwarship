@@ -12,8 +12,15 @@
         <img src="images/logo.png" class="it-army-logo"/>
         <h1>Ukraine IT Army</h1>
     </div>
+    <div class="lang-select__header">Language | Мову | Язык</div>
+    <div class="flag-container">
+        <label for="english" class="flag">🇬🇧</label>
+        <label for="ukrainian" class="flag">🇺🇦</label>
+        <label for="russian" class="flag">🇷🇺</label>
+    </div>
     <div class="message__container">
-        <div class="message_en" width="30%">
+        <input type="radio" id="english" name="lang-select" value="english" checked>
+        <div id="message_en" class="message">
             <h3>English version</h3>
             <p>The "official" news in the Russian Federation is mostly fake and we believe it is
                             better to shut them down and let people switch to trustworthy news sources.</p>
@@ -23,7 +30,8 @@
             <p>A small contribution from each of us will save Ukraine 🙏</p>
             <p>To check status: <a href="https://rustatus.xyz/status" target="_blank">https://rustatus.xyz/status</a></p>
         </div>
-        <div class="message_ru" width="30%">
+        <input type="radio" id="russian" name="lang-select" value="russian">
+        <div id="message_ru" class="message">
             <h3>Русская версия</h3>
             <p>«Официальные» новости в РФ полны пропаганды и транслируют лживую информацию о
                             событиях на Украине. Мы считаем, что лучше их закрыть и позволить людям
@@ -36,7 +44,8 @@
             <p>Небольшой вклад каждого из нас спасет Украину 🙏</p>
             <p>Чтобы проверить статус: <a href="https://rustatus.xyz/status" target="_blank">https://rustatus.xyz/status</a></p>
         </div>
-        <div class="message_ua" width="30%">
+        <input type="radio" id="ukrainian" name="lang-select" value="ukrainian">
+        <div id="message_ua" class="message">
             <h3>Українська версія</h3>
             <p>«Офіційні» новини в РФ сповнені пропаганди та транслюють брехливу інформацію про
                             події в Україні. Ми вважаємо, що краще їх закрити та дозволити людям переключитися
@@ -62,6 +71,19 @@
             <div>Error Count</div>
             <div>Timeout / Reject Count</div>
         </div>
+        <!-- Debug Container for CSS Testing -- Comment Out For Production -->
+        <!-- <div class="target-status__container">
+            <div class="target-url">https://example.com/</div>
+            <div class="req-count">484</div>
+            <div class="err-count">80</div>
+            <div class="to-count">404</div>
+        </div>
+        <div class="target-status__container">
+            <div class="target-url">https://example.com/</div>
+            <div class="req-count">484</div>
+            <div class="err-count">80</div>
+            <div class="to-count">404</div>
+        </div> -->
     </div>
     <script src="scripts/main.js"></script>
 </body>

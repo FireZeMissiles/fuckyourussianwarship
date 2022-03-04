@@ -39,10 +39,43 @@
     width: 100%;
 }
 .message__container > * {
-    width: 30%;
+    display: none;
     border-radius: 15px;
     border: 1px solid black;
     padding: 1.5ex;
+}
+
+.message {
+    width: 92.5%;
+}
+.message > h3 {
+    text-align: center;
+}
+
+.lang-select__header {
+    font-size: 16pt;
+    width: 100%;
+    text-align: center;
+}
+
+.flag-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flag {
+    font-size: 32pt;
+    margin: 0 2ch;
+}
+
+/* input[type="radio"] {
+    display: none;
+    z-index: -1;
+} */
+
+input[type="radio"]:checked + .message {
+    display: block;
 }
 
 .status__container {
@@ -73,7 +106,7 @@
     border: 1px solid red;
 }
 
-.target-status__container:nth-of-type(2n) {
+.target-status__container:nth-of-type(2n + 1) {
     background: #DDDDDD;
 }
 
@@ -102,4 +135,59 @@
 .to-count {
     border-left: 1px solid black;
     text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+    .status__header {
+        display: none;
+    }
+    .message__container {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .message__container > * {
+        width: 90%;
+        margin-bottom: 1ex;
+    }
+
+    .target-status__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .target-url {
+        width: 100%;
+        text-align: center;
+    }
+
+    .req-count,
+    .err-count,
+    .to-count {
+        width: 95%;
+        border-top: 1px solid black;
+    }
+
+    .req-count::before {
+        content: "Request Count:";
+        text-align: left;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .err-count::before {
+        content: "Error Count:";
+        text-align: left;
+        width: 100%;
+        display: inline-block;
+    }
+    .to-count::before {
+        content: "Timeout / Reject Count:";
+        text-align: left;
+        width: 100%;
+        display: inline-block;
+    }
 }
