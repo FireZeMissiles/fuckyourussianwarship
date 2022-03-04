@@ -355,6 +355,7 @@ var targets = [
     'https://pravda.sk/',
     'https://vestiprim.com/',
     'https://meduza.io/feature/2022/03/03/kogda-ty-vstupish-v-sovsem-uzh-vzrosluyu-zhizn-vse-uzhe-ulyazhetsya',
-    'https://185.170.2.232/',
-    'https://185.170.2.231/'
+    'https://185.170.2.232/',           // NSPK
+    'https://185.170.2.231/',           // NSPK
+    'https://185.178.208.120/'          // RT server address to bypass DDoS
 ]
